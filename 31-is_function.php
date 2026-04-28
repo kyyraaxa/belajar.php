@@ -1,13 +1,7 @@
 <?php
+// kamu bukan siapa siapa
+$nilai = 30;
 
-function isFunction($var) {
-    return is_callable($var);
-}
+$checkData = is_int($nilai);
 
-$myFunction = function() {
-    return "Hello, World!";
-};
-
-var_dump(isFunction($myFunction)); // bool(true)
-var_dump(isFunction("strlen")); // bool(true)
-var_dump(isFunction("nonExistentFunction")); // bool(false)
+echo $checkData ? "ini adalah integer" : "ini bukan integer";
